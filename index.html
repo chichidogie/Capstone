@@ -1,0 +1,987 @@
+<!-- DEBUG-VIEW START 1 APPPATH/Views/home/layout/header.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- <title>put cms title here</title> -->
+  <title>San Rafael Guagua, Pampanga</title>
+  
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Favicons -->
+  
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://barangay.info/demo/frontend/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://barangay.info/demo/frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://barangay.info/demo/frontend/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://barangay.info/demo/frontend/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://barangay.info/demo/frontend/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://barangay.info/demo/frontend/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="style.css" rel="stylesheet">
+  <style>
+  /*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background:green;
+  height: 40px;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+#topbar .contact-info i {
+  font-style: normal;
+  color: #fff;
+}
+
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+  padding-left: 5px;
+  color: #fff;
+}
+
+#topbar .contact-info i a {
+  line-height: 0;
+  transition: 0.3s;
+  transition: 0.3s;
+}
+
+#topbar .contact-info i a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+#topbar .social-links a:hover {
+  color: white;
+}
+
+.header{
+  margin-top: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+<!-- ======= Top Bar ======= -->
+<section id="topbar" class="d-flex align-items-center">
+
+  </section>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+ 
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="img/logo.png" alt="System Logo" style="height:700px !important; width:125px">
+        <!-- <h1>UpConstruction<span>.</span></h1> -->
+      </a>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+      <ul>
+                                                        <li>
+                        <a href="home"  class="">
+                            Home                        </a>
+                    </li>
+                                                        <li>
+                        <a href="about"  class="">
+                            About                        </a>
+                    </li>
+                                                        <li>
+                        <a href="services"  class="">
+                            Services                        </a>
+                    </li>
+                                                        <li>
+                        <a href="projects"  class="">
+                            Projects                        </a>
+                    </li>
+                                                        <li>
+                        <a href="blog"  class="">
+                            Blog                        </a>
+                    </li>
+                                                        <li>
+                        <a href="gallery"  class="">
+                            Gallery                        </a>
+                    </li>
+                                                        <li>
+                        <a href="contact"  class="">
+                            Contact                        </a>
+                    </li>
+                                                        <li>
+                        <a href="https://freehostingph.com" target="_blank" class="">
+                            Free Hosting PH                        </a>
+                    </li>
+                            </ul>
+      </nav><!-- .navbar -->
+     
+    </div>
+    
+  </header><!-- End Header -->
+  <script>
+        // Get the current path
+        var path = window.location.pathname;
+
+        // Loop through each menu item and check if its URL matches the current path
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuItems = document.getElementById('menu').getElementsByTagName('a');
+            for (var i = 0; i < menuItems.length; i++) {
+                if (menuItems[i].getAttribute('href') === path) {
+                    menuItems[i].classList.add('active');
+                    break; // Stop looping once the active item is found
+                }
+            }
+        });
+    </script>
+
+        </body>
+<!-- DEBUG-VIEW ENDED 1 APPPATH/Views/home/layout/header.php -->
+<!-- DEBUG-VIEW START 2 APPPATH/Views/home/index.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+img {
+  width: 100%;
+  height: 50%;
+}
+</style>
+</head>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+      <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Welcome to <span>Brgy San Rafael Guagua, Pampanga</span></h2>
+            <p data-aos="fade-up">Welcome to Your Website Name, where creativity knows no boundaries. Unleash your imagination and explore endless possibilities..</p>
+            <!-- <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    
+      <div class="carousel-item active" style="background-image: url(https://barangay.info/demo/public/images/1713402757_d222d36e9f7e9f616dc5.jpg)"></div>
+      <div class="carousel-item" style="background-image:  url(https://barangay.info/demo/public/images/1713402757_9c1f394cd939deeb6410.jpg)"></div>
+       <div class="carousel-item" style="background-image:  url(https://barangay.info/demo/public/images/1713402757_e82ef2b39de215b22f32.jpg)"></div>
+      <!--<div class="carousel-item" style="background-image: url(https://barangay.info/demo/frontend/assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(https://barangay.info/demo/frontend/assets/img/hero-carousel/hero-carousel-5.jpg)"></div> -->
+            <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Brgy Officials Section ======= -->
+    <section id="constructions" class="constructions">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Barangay Officials</h2>
+          <p>"A true leader does not create separation, A true leader brings people together."
+            <br />- Tendai Ruben Mbofana</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          </div>
+        
+      
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item-kap">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <!-- <div class="card-bg" style="background-image: url(https://barangay.info/demo/frontend/assets/img/kap.png);"></div> -->
+                    <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1715526543_5d56f98953fc872a029c.jpg);"></div>
+                    
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">Gerry Abarcarte III</h4>
+                      <p>Barangay Captain</p>
+                      <p>Presiding Officer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1715526579_1c1f425624b2231ed45e.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Agta Requina</h4>
+                    <p>1st Councilor</p>
+                    <p>Committee on Ways & Means</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1715526622_c32b63a0a80f8760f593.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Tyrone Abaigar Torre</h4>
+                    <p>Second Councilor</p>
+                    <p>Committee on Infra</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1715526671_652366727b61220b82c2.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Alexis Abaigar</h4>
+                    <p>Third Councilor</p>
+                    <p>Committee on Peace & Oder</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1715526700_ef11ac0d4e2cfbde9e73.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Marlon Abarracoso</h4>
+                    <p>4th Councilor</p>
+                    <p>Committee On Agriculture</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1715526729_c3fe07e10ca6bf349ba4.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Dianne Bersabal</h4>
+                    <p>5th Councilor</p>
+                    <p>Committee on Rules</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1715526760_2a93ea6a70d2f8fe994c.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Marites Babael</h4>
+                    <p>6th Councilor</p>
+                    <p>Committee on Public Works</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1715526789_eed21953f088329c14c6.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Ebaresto Delena</h4>
+                    <p>7th Councilor</p>
+                    <p>Committee on Gambing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1715526821_03fb3414cf296a0301a9.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Trillion Abaigar</h4>
+                    <p>SK Chairman</p>
+                    <p>Committee on Youth & Sports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1710494369_66a2b3680ffbd1618c1d.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Odel Catarman</h4>
+                    <p>Barangay Secretary</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                <div class="card-bg" style="background-image: url(https://barangay.info/demo/uploads/1710494378_d8d9b19fe116ed93eccb.png);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Botoy Abayan</h4>
+                    <p>Barangay Treasurer</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card -->
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          </div>
+          <!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Constructions Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+              <i class='fas fa-certificate' style='color: green'></i>
+              </div>
+              <h3>Barangay Clearance</h3>
+              <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+              <a href="https://barangay.info/demo/service-details" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+              <i class='fa-solid fa-award' style='color: blue'></i>
+              </div>
+              <h3>Residence Certificate</h3>
+              <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+              <a href="https://barangay.info/demo/service-details" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+              <i class='fas fa-medal' style='color: red'></i>
+              </div>
+              <h3>Certificate of Indigency</h3>
+              <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+              <a href="https://barangay.info/demo/service-details" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class='fa-solid fa-person-dress' style='color:#e07800'></i>
+              </div>
+              <h3>Solo Parent</h3>
+              <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+              <a href="https://barangay.info/demo/service-details" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class='fa fa-id-card' style='color: blue'></i>
+              </div>
+              <h3>Barangay ID</h3>
+              <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+              <a href="https://barangay.info/demo/service-details" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class='fa-solid fa-money-bill-transfer' style='color:#107e02'></i>
+              </div>
+              <h3>Transfer of Residency</h3>
+              <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+              <a href="https://barangay.info/demo/service-details" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row  g-2 d-flex">
+
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4>Our Mission</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>Our Vision</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>Our Goal</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4>Nostrum</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <h3>MISSION</h3>
+                <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+ Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit.
+ Ullamco                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://barangay.info/demo/uploads/images/1710694320_2e1fee092ff2cfebb45f.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>VISION</h3>
+                <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+ Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit.
+
+Lorem                 </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="https://barangay.info/demo/uploads/images/1710694502_a5817e750a0ed712cee2.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>GOAL</h3>
+                <p class="fst-italic">
+                 Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit.
+ Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.
+Lorem ipsum dolor sit amet, conse                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="https://barangay.info/demo/uploads/images/1710694841_806573185fe140e7a591.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Omnis fugiat ea explicabo sunt</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="https://barangay.info/demo/frontend/assets/img/features-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Our Projects Section ======= -->
+    <section id="projects" class="projects">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Projects1</h2>
+          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+        </div>
+       
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+        
+          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+          
+            <li  data-filter="*" class="filter-active">All</li>
+            <li  data-filter=".filter-remodeling">Project Title 1</li>
+            <li  data-filter=".filter-construction">Project Title 2</li>
+            <li  data-filter=".filter-repairs">ProjectTitle 3</li>
+            <li  data-filter=".filter-design">Project Title 4</li>
+          </ul><!-- End Projects Filters -->
+        
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="https://barangay.info/demo/uploads/images/1712856446_e0dcaf71866433de390d.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856446_e0dcaf71866433de390d.png" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+                      <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="https://barangay.info/demo/uploads/images/1712856429_246bba000587bbcaaf04.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856429_246bba000587bbcaaf04.png" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+                  
+                      <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="https://barangay.info/demo/uploads/images/1712856595_71385fcb18d09fc1e0bb.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856595_71385fcb18d09fc1e0bb.png" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+                      <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="https://barangay.info/demo/uploads/images/1712856586_abc45719b9d953a38f80.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856586_abc45719b9d953a38f80.png" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+                                <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+              <img src="https://barangay.info/demo/uploads/images/1712856721_ee2612728b119bb778f5.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Repairs 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856721_ee2612728b119bb778f5.jpg" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+              <img src="https://barangay.info/demo/uploads/images/1712856710_82c95e281bf1c72bcc8e.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Repairs 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856710_82c95e281bf1c72bcc8e.png" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+              <img src="https://barangay.info/demo/uploads/images/1712856697_8d44dd9980d3dddaa072.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Repairs 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856697_8d44dd9980d3dddaa072.png" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+              <img src="https://barangay.info/demo/uploads/images/1712856816_d1965ffc207408edbd53.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Repairs 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856816_d1965ffc207408edbd53.jpg" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+              <img src="https://barangay.info/demo/uploads/images/1712856799_876cc7c6d89ea2697ef7.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Repairs 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856799_876cc7c6d89ea2697ef7.png" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+              <img src="https://barangay.info/demo/uploads/images/1712856790_90f205d03e59f1735741.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Repairs 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://barangay.info/demo/uploads/images/1712856790_90f205d03e59f1735741.png" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://barangay.info/demo/project-details" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+            <!-- End Projects Item -->
+          </div><!-- End Projects Container -->
+        </div>
+      </div>
+    </section><!-- End Our Projects Section -->
+
+   
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
+      <div class="container" data-aos="fade-up">
+    
+  <div class=" section-header">
+        <h2>Recent Blog Posts</h2>
+        <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
+      </div>
+      
+      <div class="row gy-5">
+      
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-item position-relative h-100">
+          
+            <div class="post-img position-relative overflow-hidden mb-3">
+              <img src="https://barangay.info/demo/uploads/images/1712854617_9bea3782749d3d7e2a40.png" class="img-fluid" alt="">
+              
+            </div>
+            <div class="post-content d-flex flex-column">
+              <h3 class="post-title">fgfdg</h3>
+              <div class="meta d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
+                </div>
+                <span class="px-3 text-black-50">/</span>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                </div>
+              </div>
+              <hr>
+              <a href="https://barangay.info/demo/8" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div><!-- End post item -->
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-item position-relative h-100">
+          
+            <div class="post-img position-relative overflow-hidden mb-3">
+              <img src="https://barangay.info/demo/uploads/images/1711975839_dfcbf60f98592ed5376d.png" class="img-fluid" alt="">
+              
+            </div>
+            <div class="post-content d-flex flex-column">
+              <h3 class="post-title">Blog 1</h3>
+              <div class="meta d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
+                </div>
+                <span class="px-3 text-black-50">/</span>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                </div>
+              </div>
+              <hr>
+              <a href="https://barangay.info/demo/6" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div><!-- End post item -->
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-item position-relative h-100">
+          
+            <div class="post-img position-relative overflow-hidden mb-3">
+              <img src="https://barangay.info/demo/uploads/images/1711855965_67f85e56495ab762729a.jpg" class="img-fluid" alt="">
+              
+            </div>
+            <div class="post-content d-flex flex-column">
+              <h3 class="post-title">Title</h3>
+              <div class="meta d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
+                </div>
+                <span class="px-3 text-black-50">/</span>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                </div>
+              </div>
+              <hr>
+              <a href="https://barangay.info/demo/5" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div><!-- End post item -->
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-item position-relative h-100">
+          
+            <div class="post-img position-relative overflow-hidden mb-3">
+              <img src="https://barangay.info/demo/uploads/images/1711848468_70af8e09a5078d5904d7.jpg" class="img-fluid" alt="">
+              
+            </div>
+            <div class="post-content d-flex flex-column">
+              <h3 class="post-title">Title1</h3>
+              <div class="meta d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
+                </div>
+                <span class="px-3 text-black-50">/</span>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                </div>
+              </div>
+              <hr>
+              <a href="https://barangay.info/demo/2" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div><!-- End post item -->
+              </div>
+      </div>
+    </section>
+    <!-- End Recent Blog Posts Section -->
+
+  </main><!-- End #main -->
+<!-- DEBUG-VIEW ENDED 2 APPPATH/Views/home/index.php -->
+<!-- DEBUG-VIEW START 3 APPPATH/Views/home/layout/footer.php -->
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
+
+<div class="footer-content position-relative">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-info">
+          <h3>UpConstruction</h3>
+          <p>
+            A108 Adam Street <br>
+            NY 535022, USA<br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+          <div class="social-links d-flex mt-3">
+            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div><!-- End footer info column-->
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div><!-- End footer links column-->
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Product Management</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Graphic Design</a></li>
+        </ul>
+      </div><!-- End footer links column-->
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Hic solutasetp</h4>
+        <ul>
+          <li><a href="#">Molestiae accusamus iure</a></li>
+          <li><a href="#">Excepturi dignissimos</a></li>
+          <li><a href="#">Suscipit distinctio</a></li>
+          <li><a href="#">Dilecta</a></li>
+          <li><a href="#">Sit quas consectetur</a></li>
+        </ul>
+      </div><!-- End footer links column-->
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Nobis illum</h4>
+        <ul>
+          <li><a href="#">Ipsam</a></li>
+          <li><a href="#">Laudantium dolorum</a></li>
+          <li><a href="#">Dinera</a></li>
+          <li><a href="#">Trodelas</a></li>
+          <li><a href="#">Flexo</a></li>
+        </ul>
+      </div><!-- End footer links column-->
+
+    </div>
+  </div>
+</div>
+
+<div class="footer-legal text-center position-relative">
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</div>
+
+</footer>
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="https://barangay.info/demo/frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://barangay.info/demo/frontend/assets/vendor/aos/aos.js"></script>
+<script src="https://barangay.info/demo/frontend/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="https://barangay.info/demo/frontend/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="https://barangay.info/demo/frontend/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="https://barangay.info/demo/frontend/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="https://barangay.info/demo/frontend/assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="https://barangay.info/demo/frontend/assets/js/main.js"></script>
+
+</body>
+
+</html>
+<!-- DEBUG-VIEW ENDED 3 APPPATH/Views/home/layout/footer.php -->
